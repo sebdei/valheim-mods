@@ -49,7 +49,7 @@ namespace PortalMarker
                 ZDO zDO = zDOID == null ? null : ZDOMan.instance.GetZDO(zDOID);
                 Vector3? targetPosition = zDO?.GetPosition();
  
-                if (targetPosition.HasValue && text != null)
+                if (targetPosition.HasValue)
                 {
                     ReplacePin(targetPosition.Value, text);
                 }
@@ -59,7 +59,7 @@ namespace PortalMarker
             {
                 Vector3? originPosition = __instance?.gameObject?.transform?.position;
  
-                if (originPosition.HasValue && text != null)
+                if (originPosition.HasValue)
                 {
                     ReplacePin(originPosition.Value, text);
                 }
