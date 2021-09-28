@@ -77,16 +77,15 @@ namespace PortalMarker
             }
         }
  
+        private static void AddPin(Vector3 position, string text)
+        {
+            Minimap.instance.AddPin(position, Minimap.PinType.Icon4, text, true, false, 0L);
+        }
+        
         private static void ReplacePin(Vector3 position, string text)
         {
             RemovePin(position);
             AddPin(position, text);
         }
- 
-        private static void AddPin(Vector3 position, string text)
-        {
-            Minimap.instance.AddPin(position, Minimap.PinType.Icon4, text, true, false, 0L);
-        }
     }
 }
- 
