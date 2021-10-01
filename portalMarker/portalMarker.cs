@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace PortalMarker
 {
-    [BepInPlugin("sebdei.portalmarker", "Marks all portals on the minimap when renaming and using them", "1.0.0")]
+    [BepInPlugin("sebdei.portalmarker", "Marks all portals on the minimap when renaming and using them", "1.1.0")]
     [BepInProcess("valheim.exe")]
     public class PortalMarker : BaseUnityPlugin
     {
